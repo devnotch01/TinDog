@@ -3,7 +3,7 @@
   color: #ffff;
 }
 .container-fluid {
-  padding: 3% 15%;
+  padding: 3% 15% 7%;
 }
 body {
   font-family: 'Montserrat', sans-serif;
@@ -48,10 +48,15 @@ h2 {
 .title-image {
   width: 60%;
   transform: rotate(25deg);
+  position: absolute;
+  right: 30%;
 }
 /* Features */
 #features {
   padding: 10% 10%;
+  background-color: #ffff;
+  position: relative;
+  z-index: 10;
 }
 .features-icon {
   color: #ef8172;
@@ -101,4 +106,38 @@ h2 {
 }
 .card {
   height: 100%;
+}
+/* CTA section */
+#cta {
+  text-align: center;
+  padding: 7% 15%;
+  background-color: #ff4c68;
+  color: #fff;
+}
+#cta h3 {
+  font-weight: 900;
+  line-height: 1.5;
+  font-size: 3.5rem;
+  margin: 5px 0 20px 0;
+}
+#cta i {
+  margin-right: 5px;
+}
+/* Footer section*/
+#footer {
+  padding: 7% 15%;
+  text-align: center;
+}
+.social-icon {
+  margin: 20px 10px;
+}
+/* Media Query */
+@media (max-width: 1028px) {
+  #title {
+    text-align: center;
+  }
+  .title-image {
+    position: static;
+    transform: rotate(0);
+  }
 }
